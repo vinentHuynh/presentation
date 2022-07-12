@@ -1,0 +1,83 @@
+#introFormat {
+  text-align: center;
+  margin-right: 8cm;
+  margin-top: 6cm;
+}
+.intro {
+  text-align: right;
+  color: aliceblue;
+}
+
+#hi {
+  font-size: 1.5rem;
+  margin-bottom: -20px;
+  color: aquamarine;
+}
+#name {
+  font-size: 7rem;
+  font-family: "Mingzat", sans-serif;
+  padding: -3px;
+  margin: -3px;
+}
+#MBMTitle {
+  padding: 50px;
+
+  font-size: 5rem;
+
+  width: fit-content;
+  color: aliceblue;
+
+  right: 1rem;
+
+  position: absolute;
+}
+.works {
+  padding: 50px;
+  inline-size: auto;
+  width: 45rem;
+  font-size: 5rem;
+  color: aliceblue;
+  position: absolute;
+
+  text-align: right;
+}
+
+.pagination-additional-class {
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+
+  width: 100%;
+}
+.pagination-additional-class > li > a {
+  color: aquamarine;
+}
+.pagination-additional-class > li:not(:last-of-type) > a,
+.pagination-additional-class > li:not(:last-of-type) > span {
+  margin-right: 50px;
+}
+
+.Cards {
+  margin-left: 10%;
+  top: 10rem;
+  position: relative;
+}
+.Tasks {
+  background-color: #282c34;
+  padding: 5px;
+  display: flex;
+  margin: 0 auto;
+  margin-right: 15%;
+  margin-top: 1%;
+  width: fit-content;
+  position: relative;
+}
+.mb-3 {
+  height: fit-content;
+  width: 20rem;
+  position: relative;
+  margin: 1rem;
+}
