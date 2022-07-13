@@ -14,7 +14,7 @@ import {
 const Body = () => {
   return (
     <div className="body">
-      <div className="works">What I have done</div>
+      <div className="works">Experiences and Projects</div>
 
       <div className="Tasks">
         <MDBRow>
@@ -29,7 +29,9 @@ const Body = () => {
               <MDBCardBody>
                 <MDBCardText>
                   Modernize code in order to streamline the development process
-                  for future developers.
+                  for future developers. Modernization of code consists of
+                  Datadog integration, unit testing, best practices for code
+                  design and resource design.
                 </MDBCardText>
               </MDBCardBody>
               <MDBListGroup flush>
@@ -54,7 +56,8 @@ const Body = () => {
               <MDBCardBody>
                 <MDBCardText>
                   Researched and created a proof of concept of a way to validate
-                  data comming into Lambda functions
+                  data coming into Lambda functions. As a result, it will be
+                  come a standard practice
                 </MDBCardText>
               </MDBCardBody>
             </MDBCard>
@@ -71,7 +74,8 @@ const Body = () => {
               <MDBCardBody>
                 <MDBCardText>
                   Created a proxy between API calls and the database in AWS in
-                  order to reduce load
+                  order to reduce load. This will reduce the manual oversight on
+                  LoadView and reduce database costs.
                 </MDBCardText>
               </MDBCardBody>
             </MDBCard>

@@ -7,7 +7,7 @@ import Body from "./Body";
 import { Pagination } from "react-bootstrap";
 import MBM from "./MBM";
 
-const items = ["Intro", "Works", "MBM"];
+const items = ["Home", "Works", "MBM"];
 
 export default class FullPage extends React.Component<any, any> {
   constructor(props: any) {
@@ -19,18 +19,22 @@ export default class FullPage extends React.Component<any, any> {
   handlePageChange = (number: any) => {
     this.setState({ currentPage: number });
   };
+  page1 = () => {
+    this.setState({ currentPage: 0 });
+  };
+  page2 = () => {
+    this.setState({ currentPage: 1 });
+  };
   getPagesNumbers = () => {
     const pageNumbers = [];
 
-    for (let i = 0; i <= 3; i++) {
-      pageNumbers.push(
-        <Pagination.Item key={i} onClick={this.handlePageChange}>
-          {items[i]}
-        </Pagination.Item>
-      );
-    }
+    pageNumbers.push(
+      <Pagination.Item key={1} onClick={this.page1}>
+        {items[0]}
+      </Pagination.Item>
+    );
 
-    return [...pageNumbers];
+    return [pageNumbers];
   };
   render() {
     const pageNumbers = this.getPagesNumbers();
@@ -42,6 +46,7 @@ export default class FullPage extends React.Component<any, any> {
           customPageNumber={this.state.currentPage}
         >
           <Intro />
+
           <Body />
           <MBM />
         </ReactPageScroller>
@@ -49,8 +54,16 @@ export default class FullPage extends React.Component<any, any> {
         <Pagination
           className="pagination-additional-class"
           onChange={this.handlePageChange}
+          onClick={this.page1}
         >
-          {pageNumbers}
+          {pageNumbers[0]}
+        </Pagination>
+        <Pagination
+          className="pagination-additional-class"
+          onChange={this.handlePageChange}
+          onClick={this.page2}
+        >
+          {pageNumbers[1]}
         </Pagination>
       </React.Fragment>
     );
