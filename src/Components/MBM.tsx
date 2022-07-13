@@ -8,10 +8,7 @@ import React from "react";
 import "./style.css";
 function MBM() {
   return (
-    <div>
-      <h1 id="MBMTitle">
-        Principle Based <br /> Management
-      </h1>
+    <div style={{ width: "100%", height: "100%", display: "flex" }}>
       <div className="Cards">
         <MDBCard
           className="mb-3"
@@ -31,6 +28,9 @@ function MBM() {
           </MDBCardBody>
         </MDBCard>
       </div>
+      <h1 className="MBMTitle">
+        Principle Based <br /> Management
+      </h1>
     </div>
   );
 }

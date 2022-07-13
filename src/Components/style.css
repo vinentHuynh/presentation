@@ -1,11 +1,14 @@
 #introFormat {
   text-align: center;
-  margin-right: 8cm;
-  margin-top: 6cm;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  right: 50%;
 }
 .intro {
   text-align: right;
   color: aliceblue;
+  width: 80%;
 }
 
 #hi {
@@ -19,27 +22,16 @@
   padding: -3px;
   margin: -3px;
 }
-#MBMTitle {
-  padding: 50px;
-
-  font-size: 5rem;
-
-  width: fit-content;
-  color: aliceblue;
-
-  right: 1rem;
-
-  position: absolute;
-}
-.works {
-  padding: 50px;
-  inline-size: auto;
-  width: 45rem;
-  font-size: 5rem;
-  color: aliceblue;
-  position: absolute;
-
+.MBMTitle {
   text-align: right;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -4rem;
+  color: aliceblue;
 }
 
 .pagination-additional-class {
@@ -62,22 +54,37 @@
 
 .Cards {
   margin-left: 10%;
-  top: 10rem;
-  position: relative;
+  height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Tasks {
   background-color: #282c34;
-  padding: 5px;
   display: flex;
-  margin: 0 auto;
-  margin-right: 15%;
-  margin-top: 1%;
-  width: fit-content;
-  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.works {
+  font-size: 5rem;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  width: 75%;
+  margin: 5rem;
+  margin-top: -5rem;
+}
+
+.body {
+  height: 100%;
+  display: flex;
 }
 .mb-3 {
   height: fit-content;
-  width: 20rem;
-  position: relative;
+  width: auto;
+
   margin: 1rem;
 }
