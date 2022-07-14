@@ -1,14 +1,16 @@
 #introFormat {
-  text-align: center;
   display: flex;
-  align-items: center;
+
   height: 100%;
-  right: 50%;
+  width: 100%;
 }
 .intro {
   text-align: right;
   color: aliceblue;
-  width: 80%;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  width: 100%;
   margin: 3rem;
   margin-top: 5rem;
 }
@@ -78,7 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: right;
+  text-align: left;
   width: 75%;
   margin: 5rem;
   margin-top: -5rem;
@@ -95,15 +97,15 @@
   margin: 1rem;
 }
 .rotate {
-  transform: rotate(90deg);
-  display: flex;
-  position: relative;
+  display: inline-block;
+
+  position: fixed;
   bottom: 0;
-  height: fit-content;
-  width: 100%;
+  left: 0;
+  transform-origin: top left;
+  transform: translateY(100%) rotate(-90deg);
 }
 .side {
-  align-items: center;
-  justify-content: center;
+  transform: rotate(180deg);
   display: flex;
 }

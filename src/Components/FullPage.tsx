@@ -7,7 +7,7 @@ import Body from "./Body";
 import { Pagination } from "react-bootstrap";
 import MBM from "./MBM";
 
-const items = ["Home", "Works", "MBM"];
+const items = ["Intro", "Works", "MBM"];
 
 export default class FullPage extends React.Component<any, any> {
   constructor(props: any) {
@@ -25,12 +25,25 @@ export default class FullPage extends React.Component<any, any> {
   page2 = () => {
     this.setState({ currentPage: 1 });
   };
+  page3 = () => {
+    this.setState({ currentPage: 2 });
+  };
   getPagesNumbers = () => {
     const pageNumbers = [];
 
     pageNumbers.push(
       <Pagination.Item key={1} onClick={this.page1}>
         {items[0]}
+      </Pagination.Item>
+    );
+    pageNumbers.push(
+      <Pagination.Item key={1} onClick={this.page2}>
+        {items[1]}
+      </Pagination.Item>
+    );
+    pageNumbers.push(
+      <Pagination.Item key={1} onClick={this.page3}>
+        {items[2]}
       </Pagination.Item>
     );
 
@@ -54,7 +67,6 @@ export default class FullPage extends React.Component<any, any> {
         <Pagination
           className="pagination-additional-class"
           onChange={this.handlePageChange}
-          onClick={this.page1}
         >
           {pageNumbers[0]}
         </Pagination>
