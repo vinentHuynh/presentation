@@ -4,11 +4,19 @@ function Intro() {
   return (
     <div id="introFormat">
       <div className="rotate">
-        <div className="side" id="content">
-          <h5 style={{ fontSize: "3rem", color: "aliceblue" }}>
+        <div className="side">
+          <h5 style={{ fontSize: "2rem", color: "aliceblue" }}>
             Mobile-Capability.{" "}
           </h5>
-          <h6 style={{ fontSize: "3rem", color: "aquamarine" }}>DEV</h6>
+          <h6
+            style={{
+              fontSize: "2rem",
+              color: "aquamarine",
+              fontFamily: "'Mingzat', sans-serif",
+            }}
+          >
+            DEV
+          </h6>
         </div>
       </div>
       <div className="intro">
