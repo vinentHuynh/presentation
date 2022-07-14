@@ -56,8 +56,8 @@ const Body = () => {
               <MDBCardBody>
                 <MDBCardText>
                   Researched and created a proof of concept of a way to validate
-                  data coming into Lambda functions. As a result, it will be
-                  come a standard practice
+                  data coming into Lambda functions. As a result, it will become
+                  a standard practice.
                 </MDBCardText>
               </MDBCardBody>
             </MDBCard>
